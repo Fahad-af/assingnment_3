@@ -65,5 +65,24 @@ sum(num)
                   let longitude=position.coords.longitude
                   console.log(latitude, longitude)
             })
+      
+  } 
+
+{
+      //ans to the qs no 7
+      function myfunk(){
+            alert('this is alert box')
       }
+      function mykey(){
+            alert('onkeypress event show')
+      }
+      function bigImg(){
+          const img=  document.getElementById('myimg')
+          img.src='./baba.jpg'
+      }
+
+}
+{
+      ///ans to qs no 8
+}
      
