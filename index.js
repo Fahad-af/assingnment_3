@@ -63,7 +63,8 @@ sum(num)
             navigator.geolocation.getCurrentPosition(function(position){
                  let latitude= position.coords.latitude
                   let longitude=position.coords.longitude
-                  console.log(latitude, longitude)
+                 console.log(latitude)
+                 console.log(longitude)
             })
       
   } 
@@ -84,5 +85,84 @@ sum(num)
 }
 {
       ///ans to qs no 8
+      function qs8(){
+            const ptag = document.getElementById('ptag')
+            ptag.innerHTML='Md Fahad Afridi'
+      }
+      
+}
+{
+      /// ans to qs not 9
+      function mysubmit(){
+            const name = document.getElementById('name').value
+           const email= document.getElementById('email').value
+           const password= document.getElementById('password').value
+           const cpwd =document.getElementById('cpwd').value
+           if(name.length<4){
+             alert('name should be 5  characters')
+           }else if(password.length<8){
+             alert('password more than 8 characters')
+           }else if(password!=cpwd){
+             alert('password not match')
+           }
+          
+        }
+}
+{
+      // ans to the qs no 10
+      function qs10(){
+          const p =document.getElementById('qs10')
+          p.classList.add('highlight')
+          p.style.background='yellow'
+      }
+}
+{
+      //ans to the qs no 11
+      function qs11(){
+           const numb =[1,2,3,4,5];
+           for(i=0;i<numb.length;i++){
+            const ul =document.getElementById('qs11')
+           const li =document.createElement('li');
+           li.innerHTML=i
+           ul.appendChild(li)
+           }
+           
+
+           
+      }
+      
+}
+{
+      ///ans to the qs no 12 
+    function qs12(){
+            const img =document.getElementById('qs12')
+            img.src='./baba.jpg'
+      }
+}
+{
+      function qs13(){
+           const ptag = document.querySelectorAll('p')
+           ptag[2].style.color='red'
+           const cls = document.querySelector('.qs13');
+           cls.style.color='red'
+           const id =  document.querySelector('#qs13');
+           id.style.color='red'
+      }
+}
+
+{
+      //ans to the qs no 14
+      function exGetRequest(){
+
+            fetch('"https://api.example.com/data"')
+            .then(res=> res.json())
+            .then(result=>{
+                  console.log(result)
+            })
+            
+      
+      
+      }
+     
 }
      
