@@ -154,15 +154,37 @@ sum(num)
       //ans to the qs no 14
       function exGetRequest(){
 
-            fetch('"https://api.example.com/data"')
-            .then(res=> res.json())
-            .then(result=>{
-                  console.log(result)
-            })
+            let url = 'https://jsonplaceholder.typicode.com/users'
+            let requestOption = {method:'GET'}
+            fetch(url ,requestOption)
+            .then(res=>res.json())
+            .then(result=> console.log(result))
             
       
       
       }
      
+}
+{
+       //ans to the qs no 15
+      function expostRequest(){
+            let url ='https://crud.teamrabbil.com/api/v1/CreateProduct'
+            const data = {
+                  Img:'./afridi.jpg',
+                  ProductCode:'abc',
+                  ProductName:'fahad afridi',
+                  Qty:'no qty',
+                  TotalPrice:'20',
+                  UnitPrice:'50'
+            }
+            let requesOption= {method:'POST',
+                                Headers:{'Accept':'application/json','Content-Type':'application/json'},
+                              body:JSON.stringify(data)
+                              }
+
+                              fetch(url,requesOption)
+                              .then(res=> res.json())
+                              .then(result=> console.log(result))
+      }
 }
      
